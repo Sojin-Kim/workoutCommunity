@@ -8,6 +8,6 @@
 <h1>
 	Hello world!  
 </h1>
-<p>push | fecht 확인용</p>
+<p> push | fetch 확인용</p>
 </body>
 </html>
