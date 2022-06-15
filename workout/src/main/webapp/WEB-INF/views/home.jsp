@@ -8,7 +8,6 @@
 <h1>
 	Hello world!  
 </h1>
-<li>김소진!</li>
-<P>  The time on the server is ${serverTime}. </P>
+<p>push | fecht 확인</p>
 </body>
 </html>
