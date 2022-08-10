@@ -44,7 +44,7 @@ public class JDBCTests {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-
+// 확인용
 	}
 
 }
