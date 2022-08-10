@@ -1,7 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/java,web,eclipse,windows,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,web,eclipse,windows,macos
 
-
+MANIFEST.MF
 .project
 .classpath
 
