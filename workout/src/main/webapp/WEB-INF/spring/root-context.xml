@@ -29,6 +29,6 @@
 	</bean>
 	
 	<!-- #6.3. @Mapper 인터페이스 등록 : Dao 구현객체를 동적으로 생성 -->
-	<mybatis-spring:scan base-package="com.kh.spring.**.dao"/>
+	<mybatis-spring:scan base-package="com.workout.app.**.dao"/>
 	
 </beans>
