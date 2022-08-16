@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ErrorLogAspect {
 
-	@Pointcut("within(com.kh.spring.*.controller.*)")
+	@Pointcut("within(com.workout.app.*.controller.*)")
 	public void pc() {}
 	
 	@AfterThrowing(pointcut = "pc()", throwing = "e")
