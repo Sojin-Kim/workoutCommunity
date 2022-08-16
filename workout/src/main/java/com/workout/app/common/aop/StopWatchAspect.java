@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class StopWatchAspect {
 
-	@Pointcut("execution(* com.kh.spring.todo.controller.TodoController.insertTodo(..))")
+	@Pointcut("execution(* com.workout.app.common.aop..*Impl.*(..))")
 	public void pointcut() {}
 	
 	@Around("pointcut()")

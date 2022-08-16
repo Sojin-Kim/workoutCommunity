@@ -19,8 +19,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class EscapeXmlAspect {
 
-	@Pointcut("execution(* com.kh.spring.todo.controller.TodoController.todoList(..))")
-	public void pc() {}
+	//@Pointcut("execution(* com.workout.app.todo.controller.TodoController.todoList(..))")
+	//public void pc() {}
 	
 	/*
 	 * @AfterReturning(pointcut = "pc()", returning = "returnObj") public void

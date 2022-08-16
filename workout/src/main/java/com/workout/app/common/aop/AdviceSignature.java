@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AdviceSignature {
 
-	@Pointcut("execution(* com.kh.spring.common.aop..*Impl.*(..))")
+	@Pointcut("execution(* com.workout.app.common.aop..*Impl.*(..))")
 	public void pointcut() {
 	}
 
