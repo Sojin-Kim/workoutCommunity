@@ -9,7 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Member {
 	
-	private String empid;
+	private String userId;
+	private String email;
+	private String password;
 	private String name;
-	
+	private String phoneNum;
+	private String createdDate;
+
 }

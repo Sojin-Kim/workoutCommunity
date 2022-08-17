@@ -8,4 +8,6 @@ public interface MemberService {
 
 	List<Member> selectMemberList();
 
+	Member selectOneMember(Member member);
+
 }
