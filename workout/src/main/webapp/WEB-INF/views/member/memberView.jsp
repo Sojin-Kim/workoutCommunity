@@ -1,19 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-  회원정보
-<c:forEach items="${member}" var="member">
-	${member.empid}
-	${member.name}
-</c:forEach>
-</body>
-</html>
+<jsp:include page="/WEB-INF/views/admin/adminHeader.jsp"></jsp:include>
+<div>
+	<div class="right-nav-div">회원정보</div>
+</div>

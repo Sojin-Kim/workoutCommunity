@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* adminHeader.jsp */
+#logo{
+	display:flex;
+	justify-content: center;
+	height:50px;
+	width:100%;
+	margin-top:40px;
+	border-bottom: 1px solid black;
+}
+#logo>img{
+	height:30px;
+}
+#logo>span{
+	font-size:15pt;  
+	margin-left: 30px;
+}
+
+
+/* leftNavigation.jsp */
+#left-nav{
+	float: left;
+	width:25%;
+	height:800px;
+}
+#right-nav{
+	float: right;
+	width:75%;
+	height:800px;
+}
+
+.right-nav-div{
+	background:gray;
+	height:100%;
+}
