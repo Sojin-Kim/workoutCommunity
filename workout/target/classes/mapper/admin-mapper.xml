@@ -9,7 +9,7 @@
 	    A.UPPER_MENU_ID,
 	    A.MENU_NAME,
 	    A.MENU_LEVEL,
-	    A.ORDER_PATH
+	    A.MENU_PATH
 	FROM
 	    (
 	        SELECT
@@ -17,9 +17,7 @@
 	            UPPER_MENU_ID,
 	            MENU_NAME,
 	            LEVEL MENU_LEVEL,
-	            SYS_CONNECT_BY_PATH(TO_CHAR(MENU_LEVEL, 'fm000')
-	                                || MENU_ID,
-	                                '/') ORDER_PATH
+	            MENU_PATH
 	        FROM
 	            CM_MENU
 	        START WITH
@@ -30,7 +28,6 @@
 	WHERE
 	    A.MENU_ID <![CDATA[<>]]> '90000'
 	ORDER BY
-	    A.ORDER_PATH
+	    A.MENU_ID
 </select>
-
 </mapper>

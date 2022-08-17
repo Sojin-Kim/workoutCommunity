@@ -8,26 +8,17 @@
 <head>
 <meta charset="UTF-8">
 <title>ADMIN HOME</title>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin.css">
 </head>
-<style>
-#logo{
-	display:flex;
-	justify-content: center;
-	height:50px;
-	width:100%;
-	margin-top:40px;
-	border-bottom: 1px solid black;
-}
-#logo>img{
-	height:30px;
-}
-#logo>span{
-	font-size:15pt;  
-	margin-left: 30px;
-}
-</style> 
 <div id="logo">
 	<!-- 로고 클릭 시 홈페이지 이동 -->
 	<img src="${pageContext.request.contextPath}/resources/images/common/hyundai_logo_white.png">
 	<span>관리자</span>
 </div>
+<body>
+<div id="box">
+	<div id="left-nav">
+		<jsp:include page="/WEB-INF/views/admin/leftNavigation.jsp"></jsp:include>
+	</div>
+	<div id="right-nav">
+

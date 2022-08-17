@@ -12,6 +12,7 @@ public class Menu {
 	private String upperMenuId;
 	private String menuName;
 	private String menuLevel;
-	private String orderPath;
+	private String menuPath;
 	
 }
+
