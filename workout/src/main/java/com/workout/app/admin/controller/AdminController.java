@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.workout.app.admin.model.dto.Menu;
 import com.workout.app.admin.model.service.AdminService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
+@Slf4j
 @RequestMapping("/admin")
 public class AdminController {
 	
