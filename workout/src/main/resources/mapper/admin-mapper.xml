@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.workout.app.admin.model.dao.AdminDao">
+<select id="selectAdminMenuList" resultType="menu">
+	SELECT
+	    A.MENU_ID,
+	    A.UPPER_MENU_ID,
+	    A.MENU_NAME,
+	    A.MENU_LEVEL,
+	    A.ORDER_PATH
+	FROM
+	    (
+	        SELECT
+	            MENU_ID,
+	            UPPER_MENU_ID,
+	            MENU_NAME,
+	            LEVEL MENU_LEVEL,
+	            SYS_CONNECT_BY_PATH(TO_CHAR(MENU_LEVEL, 'fm000')
+	                                || MENU_ID,
+	                                '/') ORDER_PATH
+	        FROM
+	            CM_MENU
+	        START WITH
+	            UPPER_MENU_ID = '90000'
+	        CONNECT BY
+	            PRIOR MENU_ID = UPPER_MENU_ID
+	    ) A
+	WHERE
+	    A.MENU_ID <![CDATA[<>]]> '90000'
+	ORDER BY
+	    A.ORDER_PATH
+</select>
+
+</mapper>

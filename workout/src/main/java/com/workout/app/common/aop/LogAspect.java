@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class LogAspect {
 
-	@Pointcut("execution(* com.workout.app.todo..*(..))")
+	@Pointcut("execution(* com.workout.app.*..*(..))")
 	public void pointcut() {}
 	
 	@Around("pointcut()")
