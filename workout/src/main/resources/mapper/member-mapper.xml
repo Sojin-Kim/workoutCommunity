@@ -11,4 +11,13 @@
 		test1
 </select>
 
+<select id="selectOneMember" resultType="member" parameterType="member">
+	select
+		*
+	from
+		cm_member
+    where user_id = #{userId}
+      and password = #{password}
+</select>
+
 </mapper>

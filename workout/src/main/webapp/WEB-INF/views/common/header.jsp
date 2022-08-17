@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>HYUNDAI</title>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/common.css">
 </head>
@@ -15,7 +15,9 @@
 	<header>
 		<div id="first-navigation">
 			<div class="first-nav-item"><span>App 다운로드</span></div>
-			<div class="first-nav-item"><span>개인 로그인</span></div>
+			<div class="first-nav-item">
+				<a class="" href="${pageContext.request.contextPath}/member/loginForm.do"><span>개인 로그인</span></a>
+			</div>
 			<div class="first-nav-item"><span>법인 로그인</span></div>
 			<div class="first-nav-item"><span>회원가입</span></div>
 			<div class="first-nav-item"><span>월드와이드</span></div>
