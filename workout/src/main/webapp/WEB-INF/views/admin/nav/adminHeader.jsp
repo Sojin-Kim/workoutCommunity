@@ -8,6 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>ADMIN HOME</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin.css">
 </head>
 <div id="logo">
@@ -18,7 +19,7 @@
 <body>
 <div id="box">
 	<div id="left-nav">
-		<jsp:include page="/WEB-INF/views/admin/leftNavigation.jsp"></jsp:include>
+		<jsp:include page="/WEB-INF/views/admin/nav/leftNavigation.jsp"></jsp:include>
 	</div>
 	<div id="right-nav">
 

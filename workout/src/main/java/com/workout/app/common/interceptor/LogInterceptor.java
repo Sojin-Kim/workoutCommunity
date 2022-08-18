@@ -17,10 +17,9 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		log.debug("========================================================");
-		log.debug("{} {}", request.getMethod(), request.getRequestURI());
-		log.debug("--------------------------------------------------------");
-		
+		log.info("========================================================");
+		log.info("{} {}", request.getMethod(), request.getRequestURI());
+		log.info("--------------------------------------------------------");
 		return super.preHandle(request, response, handler); // 늘 true를 반환
 	}
 	
@@ -32,8 +31,8 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
 			ModelAndView modelAndView) throws Exception {
 		super.postHandle(request, response, handler, modelAndView);
 		
-		log.debug("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-		log.debug("mav = {}", modelAndView);
+		log.info("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		log.info("mav = {}", modelAndView);
 		
 	}
 	
@@ -45,7 +44,7 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
 			throws Exception {
 		// TODO Auto-generated method stub
 		super.afterCompletion(request, response, handler, ex);
-		log.debug("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-		log.debug("{}\n", response.getStatus());
+		log.info("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+		log.info("{}\n", response.getStatus());
 	}
 }

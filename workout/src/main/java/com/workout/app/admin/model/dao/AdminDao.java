@@ -8,7 +8,7 @@ import com.workout.app.admin.model.dto.Menu;
 
 @Mapper
 public interface AdminDao {
-
+	//관리자 메뉴 조회
 	List<Menu> selectAdminMenuList();
 
 }

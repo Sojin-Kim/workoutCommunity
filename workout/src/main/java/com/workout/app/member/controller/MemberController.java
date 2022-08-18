@@ -23,14 +23,15 @@ public class MemberController {
 	//회원 목록 화면 호출
 	@GetMapping("/memberList.do")
 	public String memberList(Model model) {
+		//전체 회원 조회
 		List<Member> member = memberService.selectMemberList();
 		model.addAttribute("member",member);
-		return "member/memberView";
+		return "member/memberList";
 	}
 	
 	//로그인 화면 호출
 	@GetMapping("/loginForm.do")
-	public String loginView(Model model) {
+	public String loginForm(Model model) {
 		return "member/loginForm";
 	}
 	
@@ -39,7 +40,7 @@ public class MemberController {
 	// id가 admin인 경우 관리자 페이지로 이동.(2022.08.17 ksj)	
 	@PostMapping("/loginAction.do")
 	public String loginAction(Member member, RedirectAttributes redirectAttr, Model model) {
-		Member result = memberService.selectOneMember(member);
+		Member result = memberService.selectOneMember(member);	//로그인 확인
 		String rdrct = "redirect:/";
 		if(result != null) {	// 로그인 성공
 			redirectAttr.addFlashAttribute("msg", "로그인 성공!");
