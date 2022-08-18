@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Menu {
-	private String menuId;
-	private String upperMenuId;
-	private String menuName;
-	private String menuLevel;
-	private String menuPath;
+	private String menuId;	 	/* 메뉴ID */
+	private String upperMenuId; /* 상위메뉴ID */
+	private String menuName;    /* 메뉴이름 */
+	private String menuLevel;   /* 메뉴레벨 */
+	private String menuPath;    /* 메뉴경로 */
 	
 }
 

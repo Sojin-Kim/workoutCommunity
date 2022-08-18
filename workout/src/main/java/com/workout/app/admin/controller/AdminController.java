@@ -21,10 +21,10 @@ public class AdminController {
 	@Autowired
 	private AdminService adminService;
 
-	//로그인 화면 호출
+	//관리자 홈 화면 호출
 	@GetMapping("/adminHome.do")
-	public String loginView(Model model) {
-		List<Menu> menuList = adminService.selectAdminMenuList();
+	public String adminHome(Model model) {
+		List<Menu> menuList = adminService.selectAdminMenuList();  //관리자 메뉴 조회
 		model.addAttribute("menuList",menuList);
 		return "admin/adminHome";
 	}

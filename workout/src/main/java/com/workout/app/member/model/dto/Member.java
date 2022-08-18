@@ -9,11 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Member {
 	
-	private String userId;
-	private String email;
-	private String password;
-	private String name;
-	private String phoneNum;
-	private String createdDate;
-
+	private String userId;		/* 사용자ID */
+	private String email;		/* 이메일 */
+	private String password;    /* 비밀번호 */
+	private String name;        /* 사용자이름 */
+	private String phoneNum;    /* 핸드폰번호 */
+	private String createdDate; /* 등록일자 */
 }
